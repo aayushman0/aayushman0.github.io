@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: white;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.center{
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
+.title{
+    color: azure;
+}
+
+.paragraph{
+    color: gray;
+}
+
+.list{
+    color: aquamarine;
+}
+
+.right-float{
+    float: right;
+}
+
+.left-float{
+    float: left;
+}
