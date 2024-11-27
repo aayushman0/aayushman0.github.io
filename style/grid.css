@@ -6,8 +6,8 @@
 body{
     background-color: black;
     color: white;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 img{
@@ -18,10 +18,12 @@ img{
 
 .container{
     display: grid;
+    /* justify-items: center; */
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 40vh 20vh 20vh;
+    grid-template-rows: 80vh 40vh 20vh 20vh;
     gap: 10px;
     grid-template-areas: 
+        'top-m top-m top-m'
         'main side-1 side-2'
         'main side-3 side-4'
         'main side-5 side-6';
@@ -30,6 +32,13 @@ img{
 .sub-container{
     display: grid;
     border: 3px solid white;
+}
+
+#top-m{
+    grid-area: top-m;
+    justify-items: center;
+    grid-auto-flow: column;
+    grid-template-rows: 50vh 10vh 12vh 5vh;
 }
 
 #main{
